@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <style>
+      body{
+        border:10px solid yellow;
+        margin-top: 20px;
+      }
+    </style>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+<body class="bg-secondary">
+  <div class="row">
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+      <form method="post">
+        <b>Enter your name:</b><input type="text" name="username" class="form-control" ><br/>
+        <b>Enter the email:</b><input type="text" name="email"class="form-control"><br/>
+        <b>Gender:</b> <br><br> <input type="radio" value="M" name="gender">Male
+           <input type="radio" value="F" name="gender">Female <br><br>
+          <b> Mobile:</b> <input type="text" name="mobile"class="form-control"><br/>
+           <b>select city:</b> <select name="city">
+               <option value="none">none</option>
+             <option value="erode">erode</option>
+             <option value="cbe">cbe</option>
+             <option value="salem">salem</option>
+           </select><br/><br>
+        <input type="submit"name="show" value="Show" class="btn btn-danger"
+              formaction="http://localhost:3000/show"/> <br><br>
+        <input type="submit" name="login" value="Save" class="btn btn-info"
+              formaction="http://localhost:3000/save"/> <br> <br>
+          <input type="submit" name="update" value="update" class="btn btn-success"
+              formaction="http://localhost:3000/update"/> <br> <br>
+          <input type="submit" name="delete" value="delete" class="btn btn-primary"
+              formaction="http://localhost:3000/delete"/> <br><br>
+    </div>
+    <div class="col-md-4">
+
+    </div>
+  </div>
+
+</body>
+</html>
